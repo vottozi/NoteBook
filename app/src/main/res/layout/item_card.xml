@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F3EFCB"
+    android:layout_margin="12dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageCard"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_dashboard_black_24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="1dp">
+
+
+        <TextView
+            android:id="@+id/name_surname_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sergey Zotov"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="996550441366"
+            android:textSize="28sp" />
+
+        <ImageButton
+            android:id="@+id/dropdown_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/baseline_add_24"
+            android:contentDescription="Drop down menu"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/my_message"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:backgroundTint="#EDECEC"
+            android:hint="Write message here"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
